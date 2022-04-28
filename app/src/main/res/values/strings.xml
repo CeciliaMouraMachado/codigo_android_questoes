@@ -2,16 +2,20 @@
     <string name="app_name">Hello World App</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">PÁGINA 1</string>
-    <string name="second_fragment_label">PÁGINA 2</string>
+    <string name="fragmento_imc_label">PÁGINA IMC</string>
+    <string name="fragmento_principal_label">PÁGINA PRINCIPAL</string>
     <string name="next">Calcular</string>
-    <string name="previous">Previous</string>
+    <string name="previous">Voltar</string>
 
-    <string name="hello_first_fragment">IMC</string>
+    <string name="text_apresentacao_imc_fragment">IMC</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="helloWorld">Resultado</string>
     <string name="altura_m">ALTURA (m)</string>
     <string name="digite_sua_altura">digite sua altura</string>
     <string name="peso_kg">PESO (Kg)</string>
     <string name="digite_seu_peso">digite seu peso</string>
+    <string name="fragmento_eps_label">Entrada Processamento Saida</string>
+    <string name="text_apresentacao_eps_fragment">Conversor de Medidas</string>
+    <string name="distancia_metros">Informe o Valor que deseja converter em metros</string>
+    <string name="digite_a_distancia">digite o valor em metros</string>
 </resources>

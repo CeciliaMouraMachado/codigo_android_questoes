@@ -39,6 +39,10 @@ class MainFragment : Fragment() {
         binding.buttonVolumeCilindro.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_VolumeCilindroFragment)
         }
+
+        binding.buttonImc.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_EntradaProcessamentoSaidaFragment)
+        }
     }
 
 

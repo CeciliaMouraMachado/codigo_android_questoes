@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/MainFragment"
         android:name="br.edu.ifce.helloworldapp.MainFragment"
-        android:label="@string/second_fragment_label"
+        android:label="@string/fragmento_principal_label"
         tools:layout="@layout/fragment_main">
 
         <action
@@ -17,6 +17,10 @@
         <action
             android:id="@+id/action_MainFragment_to_VolumeCilindroFragment"
             app:destination="@id/VolumeCilindroFragment" />
+
+        <action
+            android:id="@+id/action_MainFragment_to_EntradaProcessamentoSaidaFragment"
+            app:destination="@id/ImcFragment" />
 
     </fragment>
 
@@ -32,9 +36,20 @@
     </fragment>
 
     <fragment
+        android:id="@+id/EntradaProcessamentoSaidaFragment"
+        android:name="br.edu.ifce.helloworldapp.EPSFragment"
+        android:label="@string/fragmento_eps_label"
+        tools:layout="@layout/fragment_imc">
+
+        <action
+            android:id="@+id/EntradaProcessamentoSaidaFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+
+    <fragment
         android:id="@+id/ImcFragment"
         android:name="br.edu.ifce.helloworldapp.IMCFragment"
-        android:label="@string/first_fragment_label"
+        android:label="@string/fragmento_imc_label"
         tools:layout="@layout/fragment_imc">
 
         <action

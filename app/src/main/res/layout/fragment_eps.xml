@@ -11,60 +11,37 @@
         android:id="@+id/textview_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_apresentacao_imc_fragment"
+        android:text="@string/text_apresentacao_eps_fragment"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textView_altura"
+        app:layout_constraintBottom_toTopOf="@id/textView_metros"
         />
 
     <!-- TEXTO INFROMATIVO ALTURA -->
     <TextView
-        android:id="@+id/textView_altura"
+        android:id="@+id/textView_metros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/altura_m"
-        app:layout_constraintBottom_toTopOf="@id/ed_altura"
+        android:text="@string/distancia_metros"
+        app:layout_constraintBottom_toTopOf="@id/ed_metros"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_title" />
 
     <!-- CAIXA DE TEXTO ALTURA -->
     <EditText
-        android:id="@+id/ed_altura"
+        android:id="@+id/ed_metros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/digite_sua_altura"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@id/textView_peso"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_altura"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <!-- TEXTO INFROMATIVO PESO -->
-    <TextView
-        android:id="@+id/textView_peso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/peso_kg"
-        app:layout_constraintBottom_toTopOf="@id/ed_peso"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ed_altura" />
-
-    <!-- CAIXA DE TEXTO ALTURA -->
-    <EditText
-        android:id="@+id/ed_peso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/digite_seu_peso"
+        android:hint="@string/digite_a_distancia"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@id/textView_resultado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_peso"
+        app:layout_constraintTop_toBottomOf="@id/textView_metros"
         tools:ignore="TouchTargetSizeCheck" />
+
 
     <!-- RESULT -->
     <TextView
@@ -72,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/helloWorld"
-        app:layout_constraintTop_toBottomOf="@id/ed_peso"
+        app:layout_constraintTop_toBottomOf="@id/ed_metros"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/button_calculate" />

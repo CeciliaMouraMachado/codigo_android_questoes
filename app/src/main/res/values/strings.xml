@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hello World App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">PÁGINA 1</string>
+    <string name="second_fragment_label">PÁGINA 2</string>
+    <string name="next">Calcular</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">IMC</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="helloWorld">Resultado</string>
+    <string name="altura_m">ALTURA (m)</string>
+    <string name="digite_sua_altura">digite sua altura</string>
+    <string name="peso_kg">PESO (Kg)</string>
+    <string name="digite_seu_peso">digite seu peso</string>
+</resources>

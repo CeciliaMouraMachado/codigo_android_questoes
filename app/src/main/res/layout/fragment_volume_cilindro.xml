@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- TITLE -->
+    <TextView
+        android:id="@+id/textview_title_cilindro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume do Cilindro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView_raio"
+        />
+
+    <!-- TEXTO INFROMATIVO ALTURA -->
+    <TextView
+        android:id="@+id/textView_raio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="raio"
+        app:layout_constraintBottom_toTopOf="@id/ed_raio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_title_cilindro" />
+
+    <!-- CAIXA DE TEXTO ALTURA -->
+    <EditText
+        android:id="@+id/ed_raio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="digite o tamanho do raio"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/textView_altura_cilindro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_raio"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- TEXTO INFROMATIVO PESO -->
+    <TextView
+        android:id="@+id/textView_altura_cilindro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="altura"
+        app:layout_constraintBottom_toTopOf="@id/ed_altura_cilindro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_raio" />
+
+    <!-- CAIXA DE TEXTO ALTURA -->
+    <EditText
+        android:id="@+id/ed_altura_cilindro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="digite a altura do cilindro"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/textView_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_altura_cilindro"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- RESULT -->
+    <TextView
+        android:id="@+id/textView_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helloWorld"
+        app:layout_constraintTop_toBottomOf="@id/ed_altura_cilindro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_calculate" />
+
+    <!-- BOTÃO -->
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/next"
+        app:icon="@android:drawable/btn_star_big_off"
+        app:layout_constraintTop_toBottomOf="@id/textView_resultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

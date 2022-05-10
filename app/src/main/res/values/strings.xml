@@ -1,21 +1,38 @@
 <resources>
-    <string name="app_name">Hello World App</string>
+    <string name="app_name">Atividade App</string>
     <string name="action_settings">Settings</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="fragmento_imc_label">PÁGINA IMC</string>
     <string name="fragmento_principal_label">PÁGINA PRINCIPAL</string>
     <string name="next">Calcular</string>
     <string name="previous">Voltar</string>
 
+    <!-- imc -->
     <string name="text_apresentacao_imc_fragment">IMC</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="helloWorld">Resultado</string>
+    <string name="resultado">Resultado</string>
     <string name="altura_m">ALTURA (m)</string>
     <string name="digite_sua_altura">digite sua altura</string>
     <string name="peso_kg">PESO (Kg)</string>
     <string name="digite_seu_peso">digite seu peso</string>
+
+    <!-- entrada, processamento e saída -->
     <string name="fragmento_eps_label">Entrada Processamento Saida</string>
-    <string name="text_apresentacao_eps_fragment">Conversor de Medidas</string>
-    <string name="distancia_metros">Informe o Valor que deseja converter em metros</string>
+    <string name="text_apresentacao_eps_fragment">Questão 3</string>
+    <string name="distancia_metros">Informe o valor que deseja converter</string>
     <string name="digite_a_distancia">digite o valor em metros</string>
+
+    <!-- if e else -->
+    <string name="text_apresentacao_if_else_fragment">Questão 17</string>
+    <string name="numero1">Número 1</string>
+    <string name="digite_numero1">digite o primeiro número</string>
+    <string name="numero2">Número 2</string>
+    <string name="digite_numero2">digite o segundo número</string>
+    <string name="numero3">Número 3</string>
+    <string name="digite_numero3">digite o terceiro número</string>
+    <string name="resposta">resultado</string>
+    <string name="analise">Analisar</string>
+
+    <!-- imc -->
+
 </resources>

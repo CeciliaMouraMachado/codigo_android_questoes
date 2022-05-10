@@ -8,15 +8,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 //import androidx.navigation.fragment.findNavController
-import br.edu.ifce.helloworldapp.databinding.FragmentEpsBinding
+import br.edu.ifce.helloworldapp.databinding.FragmentIfElseBinding
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 
-class EPSFragment : Fragment() {
+class IfElseFragment : Fragment() {
 
-    private var _binding: FragmentEpsBinding? = null
+    private var _binding: FragmentIfElseBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -27,7 +27,7 @@ class EPSFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentEpsBinding.inflate(inflater, container, false)
+        _binding = FragmentIfElseBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -37,21 +37,22 @@ class EPSFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonCalculate.setOnClickListener {
-            //findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-
             //ENTRADA
-            val numero = binding.edMetros.text.toString().toFloat()
+            val a = binding.edNumero1.text.toString().toFloat()
+            val b = binding.edNumero2.text.toString().toFloat()
+            val c = binding.edNumero3.text.toString().toFloat()
 
             //PROCESSAMENTO
-            var dam = numero/10
-            var hm = dam/10
-            var km = hm/10
-            var dm = numero*10;
-            var cm = dm*10;
-            var mm = cm*10;
+            var resultado = ""
+            if (a > b && b > c ) resultado = "$a é o maior e o $c é o menor"
+            else if (a > c && c > b ) resultado = "$a é o maior e o $b é o menor"
+            else if (b > a && a > c ) resultado = "$b é o maior e o $c é o menor"
+            else if (b > c && c > a ) resultado = "$b é o maior e o $a é o menor"
+            else if (c > b && b > a ) resultado = "$c é o maior e o $a é o menor"
+            else if (c > a && a > b ) resultado = "$b é o maior e o $b é o menor"
 
-            // SAIDA
-            binding.textViewResultado.setText("em km: $km; \nem hm: $hm; \nem dam: $dam; \nem dm: $dm; \nem cm: $cm; \nem mm: $mm")
+
+            binding.textViewResultado.setText(resultado)
         }
     }
 

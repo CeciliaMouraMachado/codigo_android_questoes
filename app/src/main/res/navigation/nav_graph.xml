@@ -20,7 +20,11 @@
 
         <action
             android:id="@+id/action_MainFragment_to_EntradaProcessamentoSaidaFragment"
-            app:destination="@id/ImcFragment" />
+            app:destination="@id/EntradaProcessamentoSaidaFragment" />
+
+        <action
+            android:id="@+id/action_MainFragment_to_IFElseFragment"
+            app:destination="@id/IFElseFragment" />
 
     </fragment>
 
@@ -39,7 +43,7 @@
         android:id="@+id/EntradaProcessamentoSaidaFragment"
         android:name="br.edu.ifce.helloworldapp.EPSFragment"
         android:label="@string/fragmento_eps_label"
-        tools:layout="@layout/fragment_imc">
+        tools:layout="@layout/fragment_eps">
 
         <action
             android:id="@+id/EntradaProcessamentoSaidaFragment_to_MainFragment"
@@ -54,6 +58,17 @@
 
         <action
             android:id="@+id/action_ImcFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/IFElseFragment"
+        android:name="br.edu.ifce.helloworldapp.IfElseFragment"
+        android:label="Questão 17"
+        tools:layout="@layout/fragment_if_else">
+
+        <action
+            android:id="@+id/action_IfElseFragment_to_MainFragment"
             app:destination="@id/MainFragment" />
     </fragment>
 

@@ -3,67 +3,91 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".IfElseFragment">
 
-
-    <!-- TITLE -->
+<!-- TITLE -->
     <TextView
-        android:id="@+id/textview_title_cilindro"
+        android:id="@+id/textview_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Volume do Cilindro"
+        android:text="@string/text_apresentacao_if_else_fragment"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textView_raio"
+        app:layout_constraintBottom_toTopOf="@id/textView_numero1"
         />
 
-    <!-- TEXTO INFROMATIVO ALTURA -->
+    <!-- TEXTO INFROMATIVO NUMERO 1 -->
     <TextView
-        android:id="@+id/textView_raio"
+        android:id="@+id/textView_numero1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="raio"
-        app:layout_constraintBottom_toTopOf="@id/ed_raio"
+        android:text="@string/numero1"
+        app:layout_constraintBottom_toTopOf="@id/ed_numero1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_title_cilindro" />
+        app:layout_constraintTop_toBottomOf="@id/textview_title" />
 
-    <!-- CAIXA DE TEXTO ALTURA -->
+    <!-- CAIXA DE TEXTO NUMERO 1 -->
     <EditText
-        android:id="@+id/ed_raio"
+        android:id="@+id/ed_numero1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="digite o tamanho do raio"
+        android:hint="@string/digite_numero1"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@id/textView_altura_cilindro"
+        app:layout_constraintBottom_toTopOf="@id/textView_numero2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_raio"
+        app:layout_constraintTop_toBottomOf="@id/textView_numero1"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <!-- TEXTO INFROMATIVO PESO -->
+    <!-- TEXTO INFROMATIVO NUMERO 2 -->
     <TextView
-        android:id="@+id/textView_altura_cilindro"
+        android:id="@+id/textView_numero2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="altura"
-        app:layout_constraintBottom_toTopOf="@id/ed_altura_cilindro"
+        android:text="@string/numero2"
+        app:layout_constraintBottom_toTopOf="@id/ed_numero2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ed_raio" />
+        app:layout_constraintTop_toBottomOf="@id/ed_numero1" />
 
-    <!-- CAIXA DE TEXTO ALTURA -->
+    <!-- CAIXA DE TEXTO NUMERO 2 -->
     <EditText
-        android:id="@+id/ed_altura_cilindro"
+        android:id="@+id/ed_numero2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="digite a altura do cilindro"
+        android:hint="@string/digite_numero2"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/textView_numero3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_numero2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- TEXTO INFROMATIVO NUMERO 3 -->
+    <TextView
+        android:id="@+id/textView_numero3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numero3"
+        app:layout_constraintBottom_toTopOf="@id/ed_numero3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_numero2" />
+
+    <!-- CAIXA DE TEXTO NUMERO 3 -->
+    <EditText
+        android:id="@+id/ed_numero3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_numero3"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@id/textView_resultado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_altura_cilindro"
+        app:layout_constraintTop_toBottomOf="@id/textView_numero3"
         tools:ignore="TouchTargetSizeCheck" />
 
     <!-- RESULT -->
@@ -71,11 +95,12 @@
         android:id="@+id/textView_resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/resultado"
-        app:layout_constraintTop_toBottomOf="@id/ed_altura_cilindro"
+        android:text="@string/resposta"
+        app:layout_constraintTop_toBottomOf="@id/ed_numero3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/button_calculate" />
+
 
     <!-- BOTÃO -->
     <Button
@@ -83,11 +108,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/teal_200"
-        android:text="@string/next"
+        android:text="@string/analise"
         app:icon="@android:drawable/btn_star_big_off"
         app:layout_constraintTop_toBottomOf="@id/textView_resultado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

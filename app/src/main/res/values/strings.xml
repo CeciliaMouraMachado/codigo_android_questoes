@@ -3,12 +3,12 @@
     <string name="action_settings">Settings</string>
 
     <!-- Strings used for fragments for navigation -->
-    <string name="fragmento_imc_label">PÁGINA IMC</string>
     <string name="fragmento_principal_label">PÁGINA PRINCIPAL</string>
     <string name="next">Calcular</string>
     <string name="previous">Voltar</string>
 
     <!-- imc -->
+    <string name="fragmento_imc_label">PÁGINA IMC</string>
     <string name="text_apresentacao_imc_fragment">IMC</string>
     <string name="resultado">Resultado</string>
     <string name="altura_m">ALTURA (m)</string>
@@ -23,6 +23,7 @@
     <string name="digite_a_distancia">digite o valor em metros</string>
 
     <!-- if e else -->
+    <string name="fragmento_if_else_label">Questão 17</string>
     <string name="text_apresentacao_if_else_fragment">Questão 17</string>
     <string name="numero1">Número 1</string>
     <string name="digite_numero1">digite o primeiro número</string>
@@ -33,6 +34,11 @@
     <string name="resposta">resultado</string>
     <string name="analise">Analisar</string>
 
-    <!-- imc -->
+    <!-- switch-->
+    <string name="fragmento_switch_label">Questão 27</string>
+    <string name="text_apresentacao_switch_fragment">Questão 27</string>
+    <string name="introducao">Escolha um mês e descubra quantos dias ele possui!</string>
+    <string name="digite_o_mes">digite aqui o mês de sua escolha</string>
+    <string name="exibir">EXIBIR</string>
 
 </resources>

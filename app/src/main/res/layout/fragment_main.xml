@@ -50,5 +50,12 @@
             android:text="IF ELSE"
             />
 
+        <Button
+            android:id="@+id/button_questao_27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch"
+            />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

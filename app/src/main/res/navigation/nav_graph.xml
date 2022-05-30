@@ -26,6 +26,10 @@
             android:id="@+id/action_MainFragment_to_IFElseFragment"
             app:destination="@id/IFElseFragment" />
 
+        <action
+            android:id="@+id/action_MainFragment_to_SwitchFragment"
+            app:destination="@id/SwitchFragment" />
+
     </fragment>
 
     <fragment
@@ -64,11 +68,22 @@
     <fragment
         android:id="@+id/IFElseFragment"
         android:name="br.edu.ifce.helloworldapp.IfElseFragment"
-        android:label="Questão 17"
+        android:label="@string/fragmento_if_else_label"
         tools:layout="@layout/fragment_if_else">
 
         <action
             android:id="@+id/action_IfElseFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SwitchFragment"
+        android:name="br.edu.ifce.helloworldapp.SwitchFragment"
+        android:label="@string/fragmento_switch_label"
+        tools:layout="@layout/fragment_switch">
+
+        <action
+            android:id="@+id/action_SwitchFragment_to_MainFragment"
             app:destination="@id/MainFragment" />
     </fragment>
 

@@ -30,6 +30,14 @@
             android:id="@+id/action_MainFragment_to_SwitchFragment"
             app:destination="@id/SwitchFragment" />
 
+        <action
+            android:id="@+id/action_MainFragment_to_DoWhileFragment"
+            app:destination="@id/DoWhileFragment" />
+
+        <action
+            android:id="@+id/action_MainFragment_to_ForFragment"
+            app:destination="@id/DoWhileFragment" />
+
     </fragment>
 
     <fragment
@@ -85,6 +93,42 @@
         <action
             android:id="@+id/action_SwitchFragment_to_MainFragment"
             app:destination="@id/MainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DoWhileFragment"
+        android:name="br.edu.ifce.helloworldapp.DoWhileFragment"
+        android:label="@string/fragmento_do_while_label"
+        tools:layout="@layout/fragment_do_while">
+        <action
+            android:id="@+id/action_DoWhileFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+
+        <action
+            android:id="@+id/action_TabuadaFragment_to_DoWhileFragment"
+            app:destination="@id/TabuadaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/TabuadaFragment"
+        android:name="br.edu.ifce.helloworldapp.TabuadaFragment"
+        android:label="@string/fragmento_tabuada"
+        tools:layout="@layout/fragment_tabuada">
+        <action
+            android:id="@+id/action_DoWhileFragment_to_TabuadaFragment"
+            app:destination="@id/DoWhileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ForFragment"
+        android:name="br.edu.ifce.helloworldapp.ForFragment"
+        android:label="@string/fragmento_for_label"
+        tools:layout="@layout/fragment_for">
+        <action
+            android:id="@+id/action_ForFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+
     </fragment>
 
 </navigation>

@@ -49,6 +49,12 @@ class MainFragment : Fragment() {
         binding.buttonQuestao27.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_SwitchFragment)
         }
+        binding.buttonQuestao42.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_DoWhileFragment)
+        }
+        binding.buttonQuestao44.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_ForFragment)
+        }
     }
 
 

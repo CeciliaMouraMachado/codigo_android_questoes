@@ -35,10 +35,16 @@
     <string name="analise">Analisar</string>
 
     <!-- switch-->
-    <string name="fragmento_switch_label">Questão 27</string>
-    <string name="text_apresentacao_switch_fragment">Questão 27</string>
+    <string name="fragmento_switch_label">Questão 26</string>
+    <string name="text_apresentacao_switch_fragment">Questão 26</string>
     <string name="introducao">Escolha um mês e descubra quantos dias ele possui!</string>
     <string name="digite_o_mes">digite aqui o mês de sua escolha</string>
     <string name="exibir">EXIBIR</string>
+    <string name="fragmento_do_while_label">Questão 42</string>
+    <string name="fragmento_for_label">Questão 44</string>
+    <string name="fragmento_tabuada">Tabuada!</string>
+
+    <!-- do while-->
+
 
 </resources>
